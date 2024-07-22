@@ -28,7 +28,7 @@ public class DefaultCatalog extends CatalogImpl {
     /**
      * The schema <code>jooq_study</code>.
      */
-    public final JooqStudy JOOQ_STUDY = JooqStudy.JOOQ_STUDY;
+    public final JJooqStudy JOOQ_STUDY = JJooqStudy.JOOQ_STUDY;
 
     /**
      * No further instances allowed
@@ -40,7 +40,7 @@ public class DefaultCatalog extends CatalogImpl {
     @Override
     public final List<Schema> getSchemas() {
         return Arrays.asList(
-            JooqStudy.JOOQ_STUDY
+            JJooqStudy.JOOQ_STUDY
         );
     }
 

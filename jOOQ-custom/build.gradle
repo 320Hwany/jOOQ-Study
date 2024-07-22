@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'jooqstudy'
+version = 'jOOQ-Study-1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jooq:jooq-codegen:${jooqVersion}"
+    runtimeOnly 'com.mysql:mysql-connector-j:8.2.0'
+}

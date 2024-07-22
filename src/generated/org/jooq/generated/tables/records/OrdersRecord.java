@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.Orders;
+import org.jooq.generated.tables.JOrders;
+import org.jooq.generated.tables.pojos.Orders;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -141,14 +142,14 @@ public class OrdersRecord extends UpdatableRecordImpl<OrdersRecord> {
      * Create a detached OrdersRecord
      */
     public OrdersRecord() {
-        super(Orders.ORDERS);
+        super(JOrders.ORDERS);
     }
 
     /**
      * Create a detached, initialised OrdersRecord
      */
     public OrdersRecord(Long orderId, Long memberId, Long itemId, Long itemQuantity, String orderStatus, LocalDateTime createdAt, LocalDateTime lastModifiedAt) {
-        super(Orders.ORDERS);
+        super(JOrders.ORDERS);
 
         setOrderId(orderId);
         setMemberId(memberId);
@@ -163,8 +164,8 @@ public class OrdersRecord extends UpdatableRecordImpl<OrdersRecord> {
     /**
      * Create a detached, initialised OrdersRecord
      */
-    public OrdersRecord(org.jooq.generated.tables.pojos.Orders value) {
-        super(Orders.ORDERS);
+    public OrdersRecord(Orders value) {
+        super(JOrders.ORDERS);
 
         if (value != null) {
             setOrderId(value.getOrderId());

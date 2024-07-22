@@ -7,7 +7,8 @@ package org.jooq.generated.tables.records;
 import java.time.LocalDateTime;
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.Member;
+import org.jooq.generated.tables.JMember;
+import org.jooq.generated.tables.pojos.Member;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -141,14 +142,14 @@ public class MemberRecord extends UpdatableRecordImpl<MemberRecord> {
      * Create a detached MemberRecord
      */
     public MemberRecord() {
-        super(Member.MEMBER);
+        super(JMember.MEMBER);
     }
 
     /**
      * Create a detached, initialised MemberRecord
      */
     public MemberRecord(Long memberId, String loginId, String password, String username, Long money, LocalDateTime createdAt, LocalDateTime lastModifiedAt) {
-        super(Member.MEMBER);
+        super(JMember.MEMBER);
 
         setMemberId(memberId);
         setLoginId(loginId);
@@ -163,8 +164,8 @@ public class MemberRecord extends UpdatableRecordImpl<MemberRecord> {
     /**
      * Create a detached, initialised MemberRecord
      */
-    public MemberRecord(org.jooq.generated.tables.pojos.Member value) {
-        super(Member.MEMBER);
+    public MemberRecord(Member value) {
+        super(JMember.MEMBER);
 
         if (value != null) {
             setMemberId(value.getMemberId());

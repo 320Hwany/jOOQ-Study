@@ -8,7 +8,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import org.jooq.Record1;
-import org.jooq.generated.tables.Item;
+import org.jooq.generated.tables.JItem;
+import org.jooq.generated.tables.pojos.Item;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -157,14 +158,14 @@ public class ItemRecord extends UpdatableRecordImpl<ItemRecord> {
      * Create a detached ItemRecord
      */
     public ItemRecord() {
-        super(Item.ITEM);
+        super(JItem.ITEM);
     }
 
     /**
      * Create a detached, initialised ItemRecord
      */
     public ItemRecord(Long itemId, String itemName, Long itemPrice, String discountPrice, Long totalQuantity, LocalDate discountDate, LocalDateTime createdAt, LocalDateTime lastModifiedAt) {
-        super(Item.ITEM);
+        super(JItem.ITEM);
 
         setItemId(itemId);
         setItemName(itemName);
@@ -180,8 +181,8 @@ public class ItemRecord extends UpdatableRecordImpl<ItemRecord> {
     /**
      * Create a detached, initialised ItemRecord
      */
-    public ItemRecord(org.jooq.generated.tables.pojos.Item value) {
-        super(Item.ITEM);
+    public ItemRecord(Item value) {
+        super(JItem.ITEM);
 
         if (value != null) {
             setItemId(value.getItemId());

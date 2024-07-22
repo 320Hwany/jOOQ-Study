@@ -4,9 +4,9 @@
 package org.jooq.generated;
 
 
-import org.jooq.generated.tables.Item;
-import org.jooq.generated.tables.Member;
-import org.jooq.generated.tables.Orders;
+import org.jooq.generated.tables.JItem;
+import org.jooq.generated.tables.JMember;
+import org.jooq.generated.tables.JOrders;
 
 
 /**
@@ -18,15 +18,15 @@ public class Tables {
     /**
      * The table <code>jooq_study.item</code>.
      */
-    public static final Item ITEM = Item.ITEM;
+    public static final JItem ITEM = JItem.ITEM;
 
     /**
      * The table <code>jooq_study.member</code>.
      */
-    public static final Member MEMBER = Member.MEMBER;
+    public static final JMember MEMBER = JMember.MEMBER;
 
     /**
      * The table <code>jooq_study.orders</code>.
      */
-    public static final Orders ORDERS = Orders.ORDERS;
+    public static final JOrders ORDERS = JOrders.ORDERS;
 }
